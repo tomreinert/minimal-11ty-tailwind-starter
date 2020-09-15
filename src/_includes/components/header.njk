@@ -1,0 +1,14 @@
+<nav class="flex items-center justify-between flex-wrap bg-gray-900 p-4">
+    <a href="/" class="font-semibold text-xl text-white tracking-tight">My Page</a>
+    <div class="">
+      <a href="/blog" class="p-1 rounded mr-4 inline-block {{'bg-white text-black' if '/blog' in page.url else 'text-gray-400 hover:text-gray-200'}}">
+        Posts
+      </a>
+      <a href="/about" class="p-1 rounded mr-4 inline-block {{'bg-white text-black' if '/about' in page.url else 'text-gray-400 hover:text-gray-200'}}">
+        About
+      </a>
+      <a href="/contact" class="p-1 rounded inline-block {{'bg-white text-black' if '/contact' in page.url else 'text-gray-400 hover:text-gray-200'}}">
+        Contact
+      </a>
+    </div>
+</nav>

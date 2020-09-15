@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>{{ title }}</title>
+     <link rel="stylesheet" type="text/css" href="/assets/main.css" />
+  </head>
+  <body>
+    {% include "../components/header.njk" %}
+    <main class="bg-gray-100 p-12">
+      {{ content | safe }}
+    </main>
+
+  </body>
+</html>
