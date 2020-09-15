@@ -1,11 +1,16 @@
 <nav class="flex items-center justify-between flex-wrap bg-gray-900 p-4">
   <a href="/" class="font-semibold text-xl text-white tracking-tight">My Page</a>
   <ul>
-    {% set pagelist = collections.pages %}
-    {% for item in pagelist %}
-     <li class="inline">
-       <a href="{{ item.url }}" class="p-1 rounded mr-4 inline-block {{'bg-white text-black' if item.url in page.url else 'text-gray-400 hover:text-gray-200'}}">{{ item.data.title }}</a>
-     </li>
+
+    {% for item in navigation.items %}
+      <li class="inline">
+         <a
+         href="{{ item.url }}"
+         class="py-1 px-2  rounded mr-4 inline-block
+         {{'bg-white text-black' if item.url in page.url else 'text-gray-400 hover:text-gray-100'}}">
+         {{ item.name }}
+       </a>
+       </li>
      {% endfor %}
  </ul>
 </nav>

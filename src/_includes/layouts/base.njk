@@ -6,7 +6,8 @@
   </head>
   <body>
     {% include "../components/header.njk" %}
-    <main class="bg-gray-100 p-12">
+    <main class="p-12">
+      <h1 class="text-xl mb-8">{{title}}</h1>
       {{ content | safe }}
     </main>
 
