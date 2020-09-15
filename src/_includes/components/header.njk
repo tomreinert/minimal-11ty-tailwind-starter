@@ -2,11 +2,9 @@
   <a href="/" class="font-semibold text-xl text-white tracking-tight">My Page</a>
   <ul>
     {% set pagelist = collections.pages %}
-     {% for mypage in pagelist %}
+    {% for item in pagelist %}
      <li class="inline">
-       {# <a href="{{ item.url }}">{{ item.name }}</a> #}
-       <a href="{{ mypage.url }}" class="p-1 rounded mr-4 inline-block {{'bg-white text-black' if mypage.url in page.url else 'text-gray-400 hover:text-gray-200'}}">{{ mypage.data.title }}</a>
-
+       <a href="{{ item.url }}" class="p-1 rounded mr-4 inline-block {{'bg-white text-black' if item.url in page.url else 'text-gray-400 hover:text-gray-200'}}">{{ item.data.title }}</a>
      </li>
      {% endfor %}
  </ul>
