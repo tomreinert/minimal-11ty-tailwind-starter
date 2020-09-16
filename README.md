@@ -92,7 +92,7 @@ Let's dissect the code:
 
 ---
 
-## How To: Navigation
+## How To: Blog
 
 Add a page in `_src/blog/posts` and it will appear in the post list.
 
