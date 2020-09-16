@@ -17,8 +17,7 @@ For beginners and/or when you need a simple static site and don't want to duplic
 💜 Tailwind CSS
 
 
-### [Live Demo](https://clever-newton-cbb08a.netlify.app)
-
+### [Live Demo](https://clever-newton-cbb08a.netlify.app)  
 
 ---
 
@@ -55,7 +54,7 @@ npm run serve
 npm run build
 ```
 
----
+
 
 ## How To: Navigation
 
@@ -95,13 +94,13 @@ Let's dissect the code:
 </a>
 ```
 
----
+
 
 ## How To: Blog
 
 Add a page in `_src/blog/posts` and it will appear in the post list.
 
----
+
 
 ## Credits
 
