@@ -1,8 +1,8 @@
-# Minimal 11ty starter
+# Minimal 11ty Starter
 
 
 
-A very minimal starter using tailwind for styling and a smart navigation component.
+A *very* minimal starter using tailwind for styling and a smart navigation component.
 
 For beginners and/or when you need a simple static site and don't want to duplicate your navigation header and set active states for the nth time.
 
@@ -106,3 +106,15 @@ Let's dissect the code:
   └───index.njk   -> Your home page
 
 ```
+
+---
+
+## Credits
+
+[Bryan L. Robinson](https://bryanlrobinson.com/blog/using-nunjucks-if-expressions-to-create-an-active-navigation-state-in-11ty/)
+
+ https://statickit.com/guides/eleventy-tailwind
+
+ https://11ty.io/
+
+ https://tailwindcss.com/
