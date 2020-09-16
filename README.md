@@ -7,7 +7,7 @@ A *very* minimal starter using tailwind for styling and a smart navigation compo
 For beginners and/or when you need a simple static site and don't want to duplicate your navigation header and set active states for the nth time.
 
 **Features**
-- Active states in the navigation are automatically set based on the current page.
+- Active states in the navigation are automatically set based on the current url.
   - This even works for subpages! So if you're on `/blog/post/` the **Blog** nav item will still be active
 - Add a couple of lines to any page and it will appear in the navigation. (Check how to below)
 - A very simple blog structure
@@ -54,6 +54,8 @@ npm run build
 
 ## How To: Navigation
 
+The top navigation is the only *feature* in this starter. It lives in `/src/_includes/components/navigation.njk`. It looks for the eleventyNavigation object in pages and adds them to the navigation bar. It also checks whether the sites url is in the current url and highlight the navigation item accordingly.
+
 
 ### Adding links to the navigation
 Add the `eleventyNavigation` object to any page and it will appear in the navigation. Optionally set the order of your items.
@@ -90,30 +92,17 @@ Let's dissect the code:
 
 ---
 
-## Project structure
+## How To: Navigation
 
-```
-├───_site         -> Your build goes here
-├───src           -> Source files, you work here
-  ├───data        -> Data to use in your site (e.g. contact data)
-  └───includes    -> Your build goes here
-      ├───components  -> Components to include in your site (e.g. navigation)
-      └───layouts     -> Layouts
-  └───blog        -> Blog posts
-  └───pages       -> Main pages of your website
-  └───scripts     -> Custom scripts go here
-  └───styles      -> CSS, currently only importing tailwind
-  └───index.njk   -> Your home page
-
-```
+Add a page in `_src/blog/posts` and it will appear in the post list.
 
 ---
 
 ## Credits
 
-[Bryan L. Robinson](https://bryanlrobinson.com/blog/using-nunjucks-if-expressions-to-create-an-active-navigation-state-in-11ty/)
+[Bryan L. Robinson](https://bryanlrobinson.com/blog/using-nunjucks-if-expressions-to-create-an-active-navigation-state-in-11ty/) for explaining how to create the active navigation state
 
- https://statickit.com/guides/eleventy-tailwind
+ https://statickit.com/guides/eleventy-tailwind - I set up the project according to this guide
 
  https://11ty.io/
 
