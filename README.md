@@ -17,6 +17,9 @@ For beginners and/or when you need a simple static site and don't want to duplic
 💜 Tailwind CSS
 
 
+## [Live Demo](https://clever-newton-cbb08a.netlify.app)
+
+
 ---
 
 ## Getting Started
@@ -56,7 +59,7 @@ npm run build
 
 ## How To: Navigation
 
-The top navigation is the only *feature* in this starter and lives in `/src/_includes/components/navigation.njk`. It looks for the eleventyNavigation object in pages and adds them to the navigation bar. It also checks whether the sites url is in the current url and highlight the navigation item accordingly. This even works for subpages. So if you're on `/blog/post/` the **Blog** nav item will still be active.
+The top navigation is the only *feature* in this starter and lives in `/src/_includes/components/navigation.njk`. It looks for the eleventyNavigation object in pages and adds them to the navigation bar. It also checks whether the site's url is in the currently opened url and highlight the navigation item accordingly. This even works for subpages. So if you're on `/blog/post/` the **Blog** nav item will still be active.
 
 
 ### Adding links to the navigation
