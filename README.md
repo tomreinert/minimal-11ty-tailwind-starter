@@ -12,7 +12,7 @@ For beginners and/or when you need a simple static site and don't want to duplic
 🦴 As minimal as possible  
 ⚡️ Active states in the navigation are automatically set based on the current url.  
 💨 Add a couple of lines to any page and it will appear in the navigation. (Check how to below)  
-🗓 A very simple blog structure  
+🗓 A very simple blog structure because why not  
 🍪 Example for including json data on contact page  
 💜 Tailwind CSS
 
@@ -58,7 +58,9 @@ npm run build
 
 ## How To: Navigation
 
-The top navigation is the only *feature* in this starter and lives in `/src/_includes/components/navigation.njk`. It looks for the eleventyNavigation object in pages and adds them to the navigation bar. It also checks whether the site's url is in the currently opened url and highlight the navigation item accordingly. This even works for subpages. So if you're on `/blog/post/` the **Blog** nav item will still be active.
+The top navigation is the only *feature* in this starter and lives in `/src/_includes/components/navigation.njk`.  
+
+It looks for the eleventyNavigation object in pages and adds them to the navigation bar. It also checks whether the site's url is in the currently opened url and highlights the navigation item accordingly. This even works for subpages. So if you're on `/blog/post/` the **Blog** nav item will still be active.
 
 
 ### Adding links to the navigation
