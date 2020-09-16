@@ -17,7 +17,7 @@ For beginners and/or when you need a simple static site and don't want to duplic
 💜 Tailwind CSS
 
 
-## [Live Demo](https://clever-newton-cbb08a.netlify.app)
+### [Live Demo](https://clever-newton-cbb08a.netlify.app)
 
 
 ---
