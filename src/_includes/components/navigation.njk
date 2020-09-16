@@ -5,13 +5,14 @@
   <ul>
     {% for entry in navPages %}
       <li class="inline">
-         <a
+        <a
          href="{{ entry.url }}"
-         class="py-1 px-2  rounded mr-4 inline-block
-         {{'bg-white text-black' if entry.url in page.url else 'text-gray-400 hover:text-gray-100'}}">
+         class="py-1 px-2 rounded mr-4 inline-block
+         {{'bg-white text-black' if entry.url in page.url
+         else 'text-gray-400 hover:text-gray-100'}}">
          {{ entry.title }}
        </a>
-       </li>
-     {% endfor %}
+      </li>
+    {% endfor %}
  </ul>
 </nav>
