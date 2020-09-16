@@ -2,17 +2,19 @@
 
 
 
-A *very* minimal starter using tailwind for styling and a smart navigation component.
+A *very* minimal [eleventy](https://11ty.io/) starter using [Tailwind CSS](https://tailwindcss.com/) for styling.
+
+It features a smart navigation component that sets active states automatically.
 
 For beginners and/or when you need a simple static site and don't want to duplicate your navigation header and set active states for the nth time.
 
-**Features**
-- Active states in the navigation are automatically set based on the current url.
-  - This even works for subpages! So if you're on `/blog/post/` the **Blog** nav item will still be active
-- Add a couple of lines to any page and it will appear in the navigation. (Check how to below)
-- A very simple blog structure
-- Example for including json data on contact page
-- Tailwind CSS
+## Features
+🦴 As minimal as possible  
+⚡️ Active states in the navigation are automatically set based on the current url.  
+💨 Add a couple of lines to any page and it will appear in the navigation. (Check how to below)  
+🗓 A very simple blog structure  
+🍪 Example for including json data on contact page  
+💜 Tailwind CSS
 
 
 ---
@@ -23,7 +25,7 @@ For beginners and/or when you need a simple static site and don't want to duplic
 #### 1. Clone this repo
 
 ```
-git clone git@github.com:tomreinert/XXXXXXX.git mysite
+git clone git@github.com:tomreinert/minimal-11ty-tailwind-starter.git mysite
 ```
 #### 2. Change into the working directory
 
@@ -54,7 +56,7 @@ npm run build
 
 ## How To: Navigation
 
-The top navigation is the only *feature* in this starter. It lives in `/src/_includes/components/navigation.njk`. It looks for the eleventyNavigation object in pages and adds them to the navigation bar. It also checks whether the sites url is in the current url and highlight the navigation item accordingly.
+The top navigation is the only *feature* in this starter and lives in `/src/_includes/components/navigation.njk`. It looks for the eleventyNavigation object in pages and adds them to the navigation bar. It also checks whether the sites url is in the current url and highlight the navigation item accordingly. This even works for subpages. So if you're on `/blog/post/` the **Blog** nav item will still be active.
 
 
 ### Adding links to the navigation
