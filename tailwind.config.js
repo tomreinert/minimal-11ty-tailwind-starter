@@ -3,7 +3,12 @@ module.exports = {
     // removeDeprecatedGapUtilities: true,
     // purgeLayersByDefault: true,
   },
-  purge: [],
+  purge: [
+    "./.eleventy.js",
+    "./src/_includes/**/*.njk",
+    "./src/pages/**/*.njk",
+    "./src/index.njk",
+  ],
   theme: {
     extend: {},
   },

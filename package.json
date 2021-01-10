@@ -10,7 +10,7 @@
     "serve": "npm-run-all clean --parallel serve:*",
     "build:webpack": "webpack --mode production",
     "build:eleventy": "ELEVENTY_ENV=production eleventy",
-    "build": "run-s clean build:*"
+    "build": "NODE_ENV=production run-s clean build:*"
   },
   "keywords": [],
   "author": "",
