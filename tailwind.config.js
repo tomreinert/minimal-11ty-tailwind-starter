@@ -1,17 +1,8 @@
 module.exports = {
-  future: {
-    // removeDeprecatedGapUtilities: true,
-    // purgeLayersByDefault: true,
-  },
-  purge: [
-    "./.eleventy.js",
-    "./src/_includes/**/*.njk",
-    "./src/pages/**/*.njk",
-    "./src/index.njk",
-  ],
-  theme: {
-    extend: {},
-  },
-  variants: {},
-  plugins: [],
+  content: [
+    "./src/_includes/**/*.{html,md,11ty.js,liquid,njk,hbs,mustache,ejs,haml,pug}",
+    "./src/blog/**/*.{html,md,11ty.js,liquid,njk,hbs,mustache,ejs,haml,pug}",
+    "./src/pages/**/*.{html,md,11ty.js,liquid,njk,hbs,mustache,ejs,haml,pug}",
+    "./src/index.{html,md,11ty.js,liquid,njk,hbs,mustache,ejs,haml,pug}",
+  ]
 }
