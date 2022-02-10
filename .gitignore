@@ -1,4 +1,5 @@
 node_modules
 _site
+.DS_Store
 src/.DS_Store
 src/_includes/.DS_Store
