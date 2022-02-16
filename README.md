@@ -104,6 +104,13 @@ Let's dissect the code:
 
 Add a page in `_src/blog/posts` and it will appear in the post list.
 
+## Images
+
+Put your images into `_src/img` and add them to your markup like so:
+```
+<img src="/img/example-image.jpg">
+```
+
 
 
 ## Credits
