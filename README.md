@@ -121,4 +121,4 @@ Put your images into `_src/img` and add them to your markup like so:
 
  https://11ty.io/
 
- https://tailwindcss.com/
+ https://tailwindcss.com
