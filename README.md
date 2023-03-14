@@ -86,14 +86,14 @@ Let's dissect the code:
 <a
   href="{{ entry.url }}"
 
-  // Base styles for navigation items
+  // Base styles for all navigation items
   class="uppercase text-sm py-1 px-2 rounded mr-4 inline-block
   
-  // Styles for the active navigation item
+  // Active navigation items
   {% if (entry.url in page.url and entry.url not '/') or (page.url '/' and entry.url '/')  %}
     bg-black text-white
   
-  // Styles for default navigation item
+  // Default navigation items
   {% else %}
     text-gray-700 hover:text-gray-900
   {% endif %}">
