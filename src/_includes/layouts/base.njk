@@ -5,36 +5,32 @@
      <link rel="stylesheet" type="text/css" href="/assets/main.css" />
 
     <script>    
-    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.classList.add('dark')
-      
-    } else {
-      document.documentElement.classList.remove('dark')
-    }
-
-
-
-    const toggleDarkMode = function(){
-      if (document.documentElement.classList.contains('dark')) {
-        document.documentElement.classList.remove('dark');
-        localStorage.theme = 'light';      
-      } else {
+      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
         document.documentElement.classList.add('dark')
-        localStorage.theme = 'dark'
+        
+      } else {
+        document.documentElement.classList.remove('dark')
       }
-    };   
 
-    const forgetPref = function(){
-      localStorage.removeItem('theme')
-      window.location.reload()
-    }
-    
-      
+      const toggleDarkMode = function(){
+        if (document.documentElement.classList.contains('dark')) {
+          document.documentElement.classList.remove('dark');
+          localStorage.theme = 'light';      
+        } else {
+          document.documentElement.classList.add('dark')
+          localStorage.theme = 'dark'
+        }
+      };   
+
+      const forgetPref = function(){
+        localStorage.removeItem('theme')
+        window.location.reload()
+      }
     </script>
 
   </head>
-  <body class="dark:bg-black">
+  <body class="dark:bg-black dark:text-white">
     {% include "../components/navigation.njk" %}
     <main class="p-12 ">
       <h1 class="text-3xl mb-8">{{title}}</h1>

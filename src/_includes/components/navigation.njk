@@ -1,15 +1,15 @@
-<nav class="flex items-center justify-between flex-wrap px-5 py-3 border-b">
+<nav class="flex items-center justify-between flex-wrap px-5 py-3 border-b dark:border-gray-600">
   <a href="/" class="font-semibold text-xl tracking-tight">My Page</a>
 
   {% set navPages = collections.all | eleventyNavigation %}
-  <ul>
+  <ul class="flex items-center">
     {% for entry in navPages %}
       <li class="inline">
         <a
          href="{{ entry.url }}"
          class="uppercase text-sm py-1 px-2 rounded mr-4 inline-block
-         {{'bg-black text-white' if entry.url in page.url
-         else 'text-gray-700 hover:text-gray-900'}}">
+         {{'bg-black text-white dark:bg-gray-700' if entry.url in page.url
+         else 'text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700'}}">
          {{ entry.title }}
        </a>
       </li>
@@ -23,7 +23,7 @@
     >
       <svg
         id="theme-toggle-dark-icon"
-        class="w-5 h-5"
+        class="w-5 h-5 dark:hidden"
         fill="currentColor"
         viewBox="0 0 20 20"
         xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,7 @@
       </svg>
       <svg
         id="theme-toggle-light-icon"
-        class="w-5 h-5 dark:hidden"
+        class="w-5 h-5 hidden dark:block text-white"
         fill="currentColor"
         viewBox="0 0 20 20"
         xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +47,8 @@
       </svg>
     </button>
     
-    <button id="forgetPref" onclick="forgetPref()">Forget</button>
+    {# You can add a button that resets the user preference for the dark-light-theme #}
+    {# <button id="forgetPref" onclick="forgetPref()">Forget</button> #}
 
  </ul>
 </nav>
