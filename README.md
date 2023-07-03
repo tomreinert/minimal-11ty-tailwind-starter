@@ -98,6 +98,11 @@ Let's dissect the code:
 </a>
 ```
 
+## How to: Dark mode
+
+There's a basic dark-light-mode toggle. Per default, the site takes the user's operating system preference.
+Once the toggles the mode manually, it's saved to local storage and will override system preference. 
+You can add a button that forgets
 
 
 ## How To: Blog
