@@ -100,9 +100,24 @@ Let's dissect the code:
 
 ## How to: Dark mode
 
-There's a basic dark-light-mode toggle. Per default, the site takes the user's operating system preference.
-Once the toggles the mode manually, it's saved to local storage and will override system preference. 
-You can add a button that forgets
+As someone with limited development skills, it was harder than expected to implement a dark-light-mode toggle. So I dug into it and built it into the template.
+You can easily remove it if you don't need it.
+
+Per default, the site takes the user's operating system preference.
+
+Once the user toggles the mode manually, it is saved to local storage and will override system preference. 
+
+You can add a button that forgets the manually selected mode. See line 50 in `navigation.njk`:
+
+```
+<button id="forgetPref" onclick="forgetPref()">Forget</button>
+```
+
+If you don't need the dark mode toggle, do this:
+1. Remove the entire `<script>...</script>` from the head of `base.njk`
+2. Remove the entire `<button>...</button>` from `navigation.njk`
+3. Remove any classes that start with `dark:`from `base.njk` and `navigation.njk`
+
 
 
 ## How To: Blog
