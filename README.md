@@ -13,6 +13,7 @@ For beginners and/or when you need a simple static site and don't want to duplic
 ## Features
 🦴 As minimal as possible  
 ⚡️ Active states in the navigation are automatically set based on the current url.  
+🌗 Dark/Light Mode Toggle
 💨 Add a couple of lines to any page and it will appear in the navigation. (Check how to below)  
 🗓 A very simple blog structure because why not  
 🍪 Example for including json data on contact page  
