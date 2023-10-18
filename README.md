@@ -88,15 +88,15 @@ Let's dissect the code:
   href="{{ entry.url }}"
 
   // Base styles for all navigation items
-  class="uppercase text-sm py-1 px-2 rounded mr-4 inline-block
+  class="uppercase text-sm py-1 px-2 rounded inline-block
   
   // Active navigation items
-  {% if (entry.url in page.url and entry.url not '/') or (page.url '/' and entry.url '/')  %}
+  {% if (entry.url in page.url and entry.url != '/') or (page.url == '/' and entry.url == '/')  %}
     bg-black text-white
   
   // Default navigation items
   {% else %}
-    text-gray-700 hover:text-gray-900
+    text-zinc-700 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-700
   {% endif %}">
   {{ entry.title }}
 </a>
