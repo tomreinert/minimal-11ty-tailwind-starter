@@ -13,6 +13,7 @@ For beginners and/or when you need a simple static site and don't want to duplic
 ## Features
 🦴 As minimal as possible  
 ⚡️ Active states in the navigation are automatically set based on the current url.  
+🌗 Dark/Light Mode Toggle
 💨 Add a couple of lines to any page and it will appear in the navigation. (Check how to below)  
 🗓 A very simple blog structure because why not  
 🍪 Example for including json data on contact page  
@@ -100,6 +101,26 @@ Let's dissect the code:
   {{ entry.title }}
 </a>
 ```
+
+## How to: Dark mode
+
+As someone with limited development skills, it was harder than expected to implement a dark-light-mode toggle. So I dug into it and built it into the template.
+You can easily remove it if you don't need it.
+
+Per default, the site takes the user's operating system preference.
+
+Once the user toggles the mode manually, it is saved to local storage and will override system preference. 
+
+You can add a button that forgets the manually selected mode. See line 50 in `navigation.njk`:
+
+```
+<button id="forgetPref" onclick="forgetPref()">Forget</button>
+```
+
+If you don't need the dark mode toggle, do this:
+1. Remove the entire `<script>...</script>` from the head of `base.njk`
+2. Remove the entire `<button>...</button>` from `navigation.njk`
+3. Remove any classes that start with `dark:`from `base.njk` and `navigation.njk`
 
 
 
