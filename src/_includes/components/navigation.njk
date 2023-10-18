@@ -6,10 +6,13 @@
     {% for entry in navPages %}
       <li class="inline">
         <a
-         href="{{ entry.url }}"
-         class="uppercase text-sm py-1 px-2 rounded mr-4 inline-block
-         {{'bg-black text-white dark:bg-gray-700' if entry.url in page.url
-         else 'text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700'}}">
+          href="{{ entry.url }}"
+          class="uppercase text-sm py-1 px-2 rounded mr-4 inline-block
+          {% if (entry.url in page.url and entry.url != '/') or (page.url == '/' and entry.url == '/')  %}
+            bg-black text-white
+          {% else %}
+            text-gray-700 hover:text-gray-900
+          {% endif %}">
          {{ entry.title }}
        </a>
       </li>
