@@ -1,8 +1,6 @@
 # Minimal 11ty Starter
 
-
-![Image showing the demo website](https://user-images.githubusercontent.com/3286735/100862193-26c1bd00-3493-11eb-8120-61a0d822588b.png)
-
+[![Screenshot of the Demo Website](https://github.com/tomreinert/minimal-11ty-tailwind-starter/assets/3286735/87949d5e-dc9a-4f12-bab0-b854f7e78dd0)](https://clever-newton-cbb08a.netlify.app)
 
 A *very* minimal [eleventy](https://11ty.io/) starter using [Tailwind CSS](https://tailwindcss.com/) for styling.
 
@@ -141,8 +139,6 @@ Put your images into `_src/img` and add them to your markup like so:
 
 [Bryan L. Robinson](https://bryanlrobinson.com/blog/using-nunjucks-if-expressions-to-create-an-active-navigation-state-in-11ty/) for explaining how to create the active navigation state
 
- https://statickit.com/guides/eleventy-tailwind - I set up the project according to this guide
+https://11ty.io/
 
- https://11ty.io/
-
- https://tailwindcss.com
+https://tailwindcss.com
