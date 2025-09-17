@@ -1,6 +1,6 @@
 # Minimal 11ty Starter
 
-[![Screenshot of the Demo Website](https://github.com/tomreinert/minimal-11ty-tailwind-starter/assets/3286735/87949d5e-dc9a-4f12-bab0-b854f7e78dd0)](https://clever-newton-cbb08a.netlify.app)
+[![Screenshot of the Demo Website](https://github.com/tomreinert/minimal-11ty-tailwind-starter/assets/3286735/87949d5e-dc9a-4f12-bab0-b854f7e78dd0)](11ty-tailwind-starter.netlify.app)
 
 A *very* minimal [eleventy](https://11ty.io/) starter using [Tailwind CSS](https://tailwindcss.com/) for styling.
 
@@ -15,10 +15,10 @@ For beginners and/or when you need a simple static site and don't want to duplic
 💨 Add a couple of lines to any page and it will appear in the navigation. (Check how to below)  
 🗓 A very simple blog structure because why not  
 🍪 Example for including json data on contact page  
-💜 Tailwind CSS
+💜 Tailwind 4
 
 
-### [Live Demo](https://clever-newton-cbb08a.netlify.app)  
+### [Live Demo](11ty-tailwind-starter.netlify.app)  
 
 ---
 
