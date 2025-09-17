@@ -7,7 +7,7 @@
     "serve:eleventy": "npx @11ty/eleventy --serve",
     "serve": "npm-run-all clean serve:*",
     "build:eleventy": "npx @11ty/eleventy",
-    "build": "npm-run-all clean build:*"
+    "build": "npm-run-all --parallel clean build:*"
   },
   "keywords": [],
   "author": "",
