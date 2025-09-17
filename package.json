@@ -5,18 +5,16 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf _site",
-    "serve:webpack": "webpack --mode development --watch",
-    "serve:eleventy": "ELEVENTY_ENV=development eleventy --serve",
+    "serve:eleventy": "npx @11ty/eleventy --serve",
     "serve": "npm-run-all clean --parallel serve:*",
-    "build:webpack": "webpack --mode production",
-    "build:eleventy": "ELEVENTY_ENV=production eleventy",
-    "build": "NODE_ENV=production run-s clean build:*"
+    "build:eleventy": "npx @11ty/eleventy",
+    "build": "run-run-all clean build:*"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.1",
+    "@11ty/eleventy": "^3.1.2",
     "@11ty/eleventy-navigation": "^0.1.6",
     "autoprefixer": "^10.4.7",
     "css-loader": "^6.7.1",
@@ -25,8 +23,9 @@
     "postcss": "^8.4.14",
     "postcss-loader": "^4.3.0",
     "rimraf": "^3.0.2",
-    "tailwindcss": "^3.4.3",
-    "webpack": "^5.72.1",
-    "webpack-cli": "^4.9.2"
+    "tailwindcss": "^4.1.13"
+  },
+  "dependencies": {
+    "eleventy-plugin-tailwindcss-4": "^2.0.1"
   }
 }
