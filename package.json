@@ -1,14 +1,13 @@
 {
-  "name": "eleventy",
-  "version": "1.0.0",
+  "name": "minimal eleventy tailwind starter",
+  "version": "2.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "clean": "rimraf _site",
     "serve:eleventy": "npx @11ty/eleventy --serve",
-    "serve": "npm-run-all clean --parallel serve:*",
+    "serve": "npm-run-all clean serve:*",
     "build:eleventy": "npx @11ty/eleventy",
-    "build": "run-run-all clean build:*"
+    "build": "npm-run-all clean build:*"
   },
   "keywords": [],
   "author": "",
@@ -17,9 +16,7 @@
     "@11ty/eleventy": "^3.1.2",
     "@11ty/eleventy-navigation": "^1.0.4",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.14",
-    "postcss-loader": "^4.3.0",
-    "rimraf": "^3.0.2",
+    "rimraf": "^6.0.1",
     "tailwindcss": "^4.1.13"
   },
   "dependencies": {
