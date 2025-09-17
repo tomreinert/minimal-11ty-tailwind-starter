@@ -1,6 +1,6 @@
 # Minimal 11ty Starter
 
-[![Screenshot of the Demo Website](https://github.com/tomreinert/minimal-11ty-tailwind-starter/assets/3286735/87949d5e-dc9a-4f12-bab0-b854f7e78dd0)](11ty-tailwind-starter.netlify.app)
+[![Screenshot of the Demo Website](https://github.com/tomreinert/minimal-11ty-tailwind-starter/assets/3286735/87949d5e-dc9a-4f12-bab0-b854f7e78dd0)](https://11ty-tailwind-starter.netlify.app)
 
 A *very* minimal [eleventy](https://11ty.io/) starter using [Tailwind CSS](https://tailwindcss.com/) for styling.
 
@@ -18,7 +18,7 @@ For beginners and/or when you need a simple static site and don't want to duplic
 💜 Tailwind 4
 
 
-### [Live Demo](11ty-tailwind-starter.netlify.app)  
+### [Live Demo](https://11ty-tailwind-starter.netlify.app)  
 
 ---
 
